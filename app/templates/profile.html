@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{%block main%}
+    <div id = "fBox">
+        <div id ="centercontainer">   
+            <div id ="topcontainer" >
+                <div id="photolater">
+                    <img src= "{{ url_for('static',filename='itsmyface.png')}}"/>
+                </div>
+                
+                <div id="info">
+                    <h2>Corey Edwards</h2>
+                    <h5>@Corey-Sail</h5>
+                    <h5>Kingston,Jamaica</h5>
+                    <h5>Date {{date}}</h5>
+                </div>
+            </div>
+            <div id="">
+                <div id = "biography">
+                    <p>Sup! A little about me? well okay uhh.. I'm confident, motivated and always willing to learn or
+                        or try new things to better myself from a holistic perspective. I'm a great motivator,
+                        great people person, and great procrastinator!. Ofcourse there's some downsides like i could be
+                        a tiny bit more hardworking (ALOT), along with some few other character flaws..but I do my best
+                        to take baby steps in the right direction every day.</p>
+                </div>
+
+                <div id = "online">
+                    <div id="posts"><p><b>52</b><br>Posts</p></div>
+                    <div id="following"><p><b>32</b><br>Following</p></div>
+                    <div id="followers"><p><b>5420</b><br>Followers</p></div>
+    
+                </div>
+
+                <div id="btn">
+                    <button id = "turnOn">Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
